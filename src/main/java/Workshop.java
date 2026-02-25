@@ -15,7 +15,6 @@ public class Workshop {
         if (a >= b && a >= c) return a;
 	else if (b >= c) return b;
 	else return c;
-        return 0;
     }
 
     // Método que retorna la tabla de multiplicar de un número
