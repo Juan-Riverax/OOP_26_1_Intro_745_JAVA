@@ -19,11 +19,11 @@ public class Workshop {
 
     // Método que retorna la tabla de multiplicar de un número
     public int[] tablaMultiplicar(int numero, int limite) {
-        int tabla [];
-		for (int i=1; i<=limite; i++){
-			tabla[i-1]= numero*i;
+        int [] tabla = new int [limite];
+		for (int i=0; i<limite; i++){
+			tabla[i]= numero*i;
 		}
-	return tabla[];
+	return new int[limite];
     }
 
     // Método que calcula el factorial de un número entero
