@@ -23,7 +23,7 @@ public class Workshop {
 		for (int i=1; i<=limite; i++){
 			tabla[i-1]= numero*i;
 		}
-	return new int[limite];
+	return tabla;
     }
 
     // Método que calcula el factorial de un número entero
