@@ -21,7 +21,7 @@ public class Workshop {
     public int[] tablaMultiplicar(int numero, int limite) {
         int tabla [limite];
 		for (int i=1; i<=limite; i++){
-			tabla[i]= numero*i;
+			tabla[i-1]= numero*i;
 		}
 	return tabla[];
     }
