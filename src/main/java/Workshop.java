@@ -28,14 +28,12 @@ public class Workshop {
 
     // Método que calcula el factorial de un número entero
     public int factorial(int n) {
-        int factor;
-	int m=0;
+        int factor=n;
 	if(n>=0){
 		for(i=1; i<=n; i++){
-		factor = i(i-m);
-		m++;
+		factor = i*factor;
 		}
-        return factor;}
+        } return factor;
     }
 
     // Método que verifica si un número es primo
