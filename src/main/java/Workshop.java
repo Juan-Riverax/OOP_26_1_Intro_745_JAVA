@@ -30,7 +30,7 @@ public class Workshop {
     public int factorial(int n) {
         int factor=1;
 	if(n>=0){
-		for(i=1; i<=n; i++){
+		for(int i=1; i<=n; i++){
 		factor = i*factor;
 		}
         } return factor;
