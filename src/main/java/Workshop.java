@@ -38,9 +38,25 @@ public class Workshop {
 
     // Método que verifica si un número es primo
     public boolean esPrimo(int numero) {
-        // TODO: Implementar el método para verificar si un número es primo.
-        // Ejemplo: Si numero = 7, el resultado debería ser true.
+	int modulo;
+	int b=0;
+	if(numero>0){
+	for(int i=1; i<=numero;i++){
+		modulo=numero%i;
+		if(modulo==0)
+			{
+			b++;
+			}
+		}
+	}
+	if(b==2)
+	{
+	return true;
+	}
+	else
+	{
         return false;
+	}
     }
 
     // Método que genera una serie de Fibonacci
