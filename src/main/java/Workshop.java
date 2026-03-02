@@ -117,15 +117,19 @@ public class Workshop {
 	int b=0;
 	for(int i=0; i<arreglo.length; i++){
 		if(arreglo[i]==elemento){
-		return true;
 		b++;
 		}
-	}
-if(b==0)
+    	}
+	if(b==1)
 	{
-        return false;
+	return true;
 	}
-    }
+	else
+	{
+	return false;
+	}
+}
+	
 
     // Método que invierte un arreglo
     public int[] invertirArreglo(int[] arreglo) {
