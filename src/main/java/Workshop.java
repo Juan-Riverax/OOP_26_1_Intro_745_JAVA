@@ -192,7 +192,7 @@ public class Workshop {
     // Método que cuenta los caracteres en una cadena
     public int contarCaracteres(String cadena) {
         int conteo=0;
-		for(int i=0; i<cadena.length; i++)
+		for(int i=0; i< cadena.length(); i++)
 		{
 		conteo++;
 		}
