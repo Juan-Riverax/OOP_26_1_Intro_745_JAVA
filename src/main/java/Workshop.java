@@ -205,11 +205,10 @@ public class Workshop {
     public String invertirCadena(String cadena) {
         char[] arregloInvertido = new char[cadena.length()];
 		
-		for (int i=0; i<arregloInvertido.length; i++)
+		for (int i=0; i<cadena.length(); i++)
 		{
-			arregloInvertido[i]=cadena.charAt(cadena.length()-1-i);
+			arregloInvertido[i]=cadena.charAt(cadena.length()- 1 - i);
 		}
-		new String(arregloInvertido)}
 
         return new String(arregloInvertido);
     }
