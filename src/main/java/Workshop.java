@@ -147,7 +147,7 @@ public class Workshop {
 	int AUX;
 	int[] arregloOrdenado = new int [arreglo.length];
 		
-		for (int i=0; i<arreglo.length-1; i++)
+		for (int i=0; i<arreglo.length; i++)
 		{
 			arregloOrdenado[i]=arreglo[i];
 		}
