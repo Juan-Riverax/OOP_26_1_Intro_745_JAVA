@@ -145,14 +145,14 @@ public class Workshop {
     // Método que ordena un arreglo en orden ascendente
     public int[] ordenarArreglo(int[] arreglo) {
 	int AUX;
-	int arregloOrdenado = new int [arreglo.length];
+	int[] arregloOrdenado = new int [arreglo.length];
 		
 		for (int i=0; i<arreglo.length-1; i++)
 		{
 			arregloOrdenado[i]=arreglo[i];
 		}
 		
-		for (i=0; i<arregloOrdenado.length-1; i++)
+		for (int i=0; i<arregloOrdenado.length-1; i++)
 		{
 			int chiquilin=i;
 			for(int j=i+1; j<arregloOrdenado.length; j++)
