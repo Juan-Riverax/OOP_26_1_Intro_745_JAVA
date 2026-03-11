@@ -203,6 +203,7 @@ public class Workshop {
 
     // Método que invierte una cadena
     public String invertirCadena(String cadena) {
+
         char[] arregloInvertido = new char[cadena.length()];
 		
 		for (int i=0; i<cadena.length(); i++)
@@ -215,9 +216,19 @@ public class Workshop {
 
     // Método que verifica si una cadena es un palíndromo
     public boolean esPalindromo(String cadena) {
-        // TODO: Implementar el método para verificar si una cadena es un palíndromo.
+        char[] arregloInvertido = new char[cadena.length()];
+		
+		for (int i=0; i<cadena.length(); i++)
+		{
+			arregloInvertido[i]=cadena.charAt(cadena.length()- 1 - i);
+		}
+
+		if(arregloInvertido[]==cadena.charAt)
+		{
+			return true;
+		}
+		else{return false;}
         // Ejemplo: Si cadena = "madam", el resultado debería ser true.
-        return false;
     }
 
     // Método que cuenta el número de palabras en una cadena
