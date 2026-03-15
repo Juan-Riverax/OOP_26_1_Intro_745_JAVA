@@ -195,7 +195,7 @@ int indice=0;
 	{
 		for(int j=i+1;j<arreglo.length;j++)
 		{
-			if(arreglo[i]!=arreglo[j])
+			if(arreglo[i]==arreglo[j])
 			{
 				ting++;
 			}
