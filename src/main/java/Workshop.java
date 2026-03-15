@@ -258,12 +258,13 @@ int indice=0;
 		{
 			arregloInvertido[i]=cadena.charAt(cadena.length()- 1 - i);
 		}
+String invertido = new String(arregloInvertido);
 
-		if(arregloInvertido[]==cadena.charAt)
+		if(invertido.equals(cadena))
 		{
 			return true;
 		}
-		else{return false;]
+		else{return false;}
         // Ejemplo: Si cadena = "madam", el resultado debería ser true.
     }
 
