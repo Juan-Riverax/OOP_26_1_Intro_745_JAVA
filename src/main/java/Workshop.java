@@ -243,7 +243,6 @@ int indice=0;
 		{
 		conteo++;
 		}
-	System.out.println(conteo);
         return conteo;
     }
 
@@ -381,7 +380,8 @@ Rock crushes Scissors
     }
 
     public double areaCirculo(double radio) {
-        return 0.0;
+	double area = Math.PI*radio*radio;
+        return area;
     }
 
     public String zoodiac(int day, int month) {
