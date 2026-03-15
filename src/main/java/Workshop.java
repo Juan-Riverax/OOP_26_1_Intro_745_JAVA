@@ -263,7 +263,7 @@ int indice=0;
 		{
 			return true;
 		}
-		else{return false;}
+		else{return false;]
         // Ejemplo: Si cadena = "madam", el resultado debería ser true.
     }
 
