@@ -200,7 +200,7 @@ int indice=0;
 				ting++;
 			}
 		}
-		if(ting!=0)
+		if(ting==0)
 		{
 			NoDuplicados[indice]=arreglo[i];
 			indice++;
