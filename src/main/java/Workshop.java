@@ -220,7 +220,7 @@ int indice=0;
 		combined[i]=arreglo1[i];
 	}
 
-	for(int i=arreglo1.length+1; i<arreglo2.length; i++)
+	for(int i=arreglo1.length+1; i<arreglo1.length+arreglo2.length; i++)
 	{
 		combined[i]=arreglo2[i];
 	}
