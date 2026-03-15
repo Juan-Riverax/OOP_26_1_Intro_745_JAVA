@@ -173,7 +173,7 @@ public class Workshop {
         
 int ting=0;
 int n=0;
-	for(int i=0; i<arreglo.length-1; i++)
+	for(int i=0; i<arreglo.length; i++)
 	{
 		for(int j=i+1; j<arreglo.length; j++)
 		{
@@ -191,7 +191,7 @@ int n=0;
 
 int [] NoDuplicados= new int[arreglo.length-n];
 int indice=0;
-	for(int i=0;i<arreglo.length-1;i++)
+	for(int i=0;i<arreglo.length;i++)
 	{
 		for(int j=i+1;j<arreglo.length;j++)
 		{
