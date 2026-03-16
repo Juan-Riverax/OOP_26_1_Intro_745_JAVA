@@ -151,7 +151,7 @@ public class Workshop {
     public int[] invertirArreglo(int[] arreglo) {
 	int AUX;
 	for(int i=0; i<arreglo.length; i++){
-		for(int j=i+1; j>0; j--){
+		for(int j=i+1; j<arreglo.length; j--){
 			AUX=arreglo[i];
 			arreglo[i]=arreglo[j];
 			arreglo[j]=AUX;
