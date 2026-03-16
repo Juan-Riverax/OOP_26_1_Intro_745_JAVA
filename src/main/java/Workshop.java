@@ -434,12 +434,12 @@ Rock crushes Scissors
 				}
 				else 
 				{
-				Zodiaco = "Geminis";
+				Zodiaco = "Gemini";
 				}
 				break;
 			case 6: if(day>=1 && day<=20)
 				{
-				Zodiaco = "Geminis";
+				Zodiaco = "Gemini";
 				}
 				else 
 				{
