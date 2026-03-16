@@ -68,7 +68,7 @@ public class Workshop {
 
 	if(n>0)
 	{
-		for(i=1; i<n; i++)
+		for(int i=1; i<n; i++)
 		{
 			seriefibo[i]=a;
 			c=a+b;
