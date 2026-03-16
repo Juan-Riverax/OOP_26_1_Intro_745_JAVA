@@ -342,17 +342,21 @@ int indice=0;
 	int suma=0;
 	int k=0;
 
-	for(int i=0; i<lista.size(); i++)
+		for(int i=0; i<lista.size(); i++)
+		{
+		suma=suma+lista.get(i);
+		}
+	if(suma!=0)
 	{
-	suma=suma+lista.get(i);
-	k++;
+	promedio=(double)(suma/lista.size());
+	return promedio;
 	}
-
-	promedio=suma/k;
-	
         // TODO: Implementar el método para calcular el promedio de una lista de números.
         // Ejemplo: Si lista = [1, 2, 3, 4, 5], el resultado debería ser 3.0.
-        return promedio;
+        else
+	{
+	return 0.0;
+	}
     }
 
     // Método que convierte un número en su representación binaria
