@@ -152,7 +152,7 @@ public class Workshop {
 	int[] arregloinverted = new int [arreglo.length];
 	for(int i=0; i<arreglo.length; i++){
 		for(int j=i+1; j>0; j--){
-			arreglo[i]=arreglo[j]
+			arreglo[i]=arreglo[j];
 			}
 	}
         return arreglo;
