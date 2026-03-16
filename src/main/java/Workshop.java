@@ -68,14 +68,18 @@ public class Workshop {
 
 	if(n>0)
 	{
-		for(int i=1; i<n; i++)
-		{
-			seriefibo[i]=a;
-			c=a+b;
-			a=b;
-			b=c;
-		}
+	seriefibo[0]=0;
 	}
+	if(n>1)
+	{
+	seriefibo[1]=1;
+	}
+	
+	for (int i=2; i<n; i++)
+	{
+	seriefibo[i]=seriefibo[i-1]+seriefibo[i-2];
+	}
+	
         return seriefibo;
     }
 
