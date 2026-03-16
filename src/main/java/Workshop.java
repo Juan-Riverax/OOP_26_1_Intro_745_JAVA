@@ -149,10 +149,12 @@ public class Workshop {
 
     // Método que invierte un arreglo
     public int[] invertirArreglo(int[] arreglo) {
-	int[] arregloinverted = new int [arreglo.length];
+	int AUX;
 	for(int i=0; i<arreglo.length; i++){
 		for(int j=i+1; j>0; j--){
+			AUX=arreglo[i];
 			arreglo[i]=arreglo[j];
+			arreglo[j]=AUX;
 			}
 	}
         return arreglo;
