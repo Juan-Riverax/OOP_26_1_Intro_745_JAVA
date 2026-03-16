@@ -339,11 +339,11 @@ int indice=0;
 
     public double promedioLista(List<Integer> lista) {
 	double promedio;
-	int suma;
+	int suma=0;
 
 	for(int i=0; i<lista.size(); i++)
 	{
-	suma=suma+get(i);
+	suma=suma+lista.get(i);
 	}
 
 	promedio=suma/lista.size();
