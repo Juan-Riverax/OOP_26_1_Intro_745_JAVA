@@ -151,11 +151,11 @@ public class Workshop {
     public int[] invertirArreglo(int[] arreglo) {
 	int[] arregloinverted = new int [arreglo.length];
 	for(int i=0; i<arreglo.length; i++){
-		for(int j=arreglo.length; j>0; j--){
-			arregloinverted[j]=arreglo[i];
+		for(int j=i+1; j>0; j--){
+			arreglo[i]=arreglo[j]
 			}
 	}
-        return arregloinverted;
+        return arreglo;
     }
 
     // Método que ordena un arreglo en orden ascendente
