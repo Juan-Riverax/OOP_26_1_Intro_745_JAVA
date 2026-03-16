@@ -385,7 +385,119 @@ Rock crushes Scissors
     }
 
     public String zoodiac(int day, int month) {
-        return "";
+        String Zodiaco;
+	switch (month)
+		{
+			case 1: if(day>=1 && day<=19)
+				{
+				Zodiaco = "Capricornio";
+				}
+				else 
+				{
+				Zodiaco = "Acuario";
+				}
+				break;
+			case 2: if(day>=1 && day<=18)
+				{
+				Zodiaco = "Acuario";
+				}
+				else 
+				{
+				Zodiaco = "Piscis";
+				}
+				break;
+			case 3: if(day>=1 && day<=20)
+				{
+				Zodiaco = "Piscis";
+				}
+				else 
+				{
+				Zodiaco = "Aries";
+				}
+				break;
+			case 4: if(day>=1 && day<=19)
+				{
+				Zodiaco = "Aries";
+				}
+				else 
+				{
+				Zodiaco = "Tauro";
+				}
+				break;
+			case 5: if(day>=1 && day<=20)
+				{
+				Zodiaco = "Tauro";
+				}
+				else 
+				{
+				Zodiaco = "Geminis";
+				}
+				break;
+			case 6: if(day>=1 && day<=20)
+				{
+				Zodiaco = "Geminis";
+				}
+				else 
+				{
+				Zodiaco = "Cancer";
+				}
+				break;
+			case 7: if(day>=1 && day<=22)
+				{
+				Zodiaco = "Cancer";
+				}
+				else 
+				{
+				Zodiaco = "Leo";
+				}
+				break;
+			case 8: if(day>=1 && day<=22)
+				{
+				Zodiaco = "Leo";
+				}
+				else 
+				{
+				Zodiaco = "Virgo";
+				}
+				break;
+			case 9: if(day>=1 && day<=22)
+				{
+				Zodiaco = "Virgo";
+				}
+				else 
+				{
+				Zodiaco = "Libra";
+				}
+				break;
+			case 10: if(day>=1 && day<=22)
+				{
+				Zodiaco = "Libra";
+				}
+				else 
+				{
+				Zodiaco = "Escorpio";
+				}
+				break;
+			case 11: if(day>=1 && day<=21)
+				{
+				Zodiaco = "Escorpio";
+				}
+				else 
+				{
+				Zodiaco = "Sagitario";
+				}
+				break;
+			case 12: if(day>=1 && day<=21)
+				{
+				Zodiaco = "Sagitario";
+				}
+				else 
+				{
+				Zodiaco = "Capricornio";
+				}
+				break;
+
+	return System.out.printl(Zodiaco);
     }
 
 
