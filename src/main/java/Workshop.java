@@ -385,7 +385,7 @@ Rock crushes Scissors
     }
 
     public String zoodiac(int day, int month) {
-        String Zodiaco;
+        String Zodiaco="";
 	switch (month)
 		{
 			case 1: if(day>=1 && day<=19)
@@ -496,10 +496,8 @@ Rock crushes Scissors
 				Zodiaco = "Capricornio";
 				}
 				break;
+		}
 
-	return System.out.printl(Zodiaco);
-    }
-
-
+	return Zodiaco;
+   }
 }
-
