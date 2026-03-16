@@ -405,6 +405,10 @@ Rock crushes Scissors
 				{
 				Zodiaco = "Piscis";
 				}
+				if(day>29)
+				{
+				Zodiaco = "Invalid Date";
+				}
 				break;
 			case 3: if(day>=1 && day<=20)
 				{
