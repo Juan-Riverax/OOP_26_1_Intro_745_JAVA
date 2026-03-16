@@ -61,10 +61,22 @@ public class Workshop {
 
     // Método que genera una serie de Fibonacci
     public int[] serieFibonacci(int n) {
-        // TODO: Implementar el método para generar la serie de Fibonacci hasta el número n.
-        // Ejemplo: Si n = 5, el resultado debería ser [0, 1, 1, 2, 3].
-        // Lanzar IllegalArgumentException si n es negativo.
-        return new int[0];
+	int a=0;
+	int b=1;
+	int c;
+	int [] seriefibo = new int[n];
+
+	if(n>0)
+	{
+		for(i=1; i<n; i++)
+		{
+			seriefibo[i]=a;
+			c=a+b;
+			a=b;
+			b=c;
+		}
+	}
+        return seriefibo;
     }
 
     // Método que suma todos los elementos de un arreglo
@@ -267,7 +279,7 @@ int indice=0;
 		{
 			arregloInvertido[i]=cadena.charAt(cadena.length()- 1 - i);
 		}
-String invertido = new String(arregloInvertido);
+		String invertido = new String(arregloInvertido);
 
 		if(invertido.equals(cadena))
 		{
