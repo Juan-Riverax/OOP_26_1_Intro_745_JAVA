@@ -302,9 +302,8 @@ int indice=0;
 
     // Método que convierte una cadena a mayúsculas
     public String convertirAMayusculas(String cadena) {
-        // TODO: Implementar el método para convertir una cadena a mayúsculas.
-        // Ejemplo: Si cadena = "hello", el resultado debería ser "HELLO".
-        return "";
+       String mayuscula= cadena.toUpperCase();
+        return mayuscula;
     }
 
     // Método que convierte una cadena a minúsculas
@@ -351,8 +350,6 @@ int indice=0;
 	promedio=(double)(suma/lista.size());
 	return promedio;
 	}
-        // TODO: Implementar el método para calcular el promedio de una lista de números.
-        // Ejemplo: Si lista = [1, 2, 3, 4, 5], el resultado debería ser 3.0.
         else
 	{
 	return 0.0;
