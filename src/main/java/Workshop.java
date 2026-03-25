@@ -443,13 +443,13 @@ int indice=0;
 			hex=residuo+hex;
 			numero=numero/16;
 			}
-			
+		}
 	return hex;
 	}
 
 	if(numero<0)
 	{
-	String binario="";
+	String hex="";
 	numero=Math.abs(numero);
 
 		while(numero>0)	
@@ -490,11 +490,10 @@ int indice=0;
 			hex=residuo+hex;
 			numero=numero/16;
 			}
-	hex="-"+hex;
+		hex="-"+hex;
+		}
 	return hex;
 	}
-    }
-}
 	return "0";
 }
     // Método para el juego de piedra, papel, tijera, lagarto, Spock
