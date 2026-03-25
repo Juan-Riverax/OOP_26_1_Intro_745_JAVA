@@ -367,7 +367,7 @@ int indice=0;
     }
 
     // Método que convierte un número en su representación binaria
-    public String convertirABinario(int numero) {
+    public String convertirABinario(int numero){
 	
 	if(numero>0)
 	{
@@ -396,12 +396,9 @@ int indice=0;
 	return binario;
 	}
 
-	if (numero==0)
-	{
 	return "0";
-	}
+	
     }
-
     // Método que convierte un número en su representación hexadecimal
     public String convertirAHexadecimal(int numero) {
         // TODO: Implementar el método para convertir un número en su representación hexadecimal.
