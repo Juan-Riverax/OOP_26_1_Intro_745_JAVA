@@ -378,6 +378,7 @@ int indice=0;
 		binario=residuo+binario;
 		numero=numero/2;
 		}
+	return binario;
 	}
 
 	if(numero<0)
@@ -394,9 +395,11 @@ int indice=0;
 	binario="-"+binario;
 	return binario;
 	}
-	
-        // TODO: Implementar el método para convertir un número en su representación binaria.
-        // Ejemplo: Si numero = 10, el resultado debería ser "1010".
+
+	if (numero==0)
+	{
+	return "0";
+	}
     }
 
     // Método que convierte un número en su representación hexadecimal
