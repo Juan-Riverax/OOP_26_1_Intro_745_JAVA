@@ -325,7 +325,7 @@ int indice=0;
 
     // Método que reemplaza una subcadena en una cadena por otra subcadena
     public String reemplazarSubcadena(String cadena, String antiguaSubcadena, String nuevaSubcadena) {
-        string pepe= cadena.remplace(antiguaSubcadena,nuevaSubcadena);
+        String pepe= cadena.replace(antiguaSubcadena,nuevaSubcadena);
 	// TODO: Implementar el método para reemplazar una subcadena en una cadena por otra subcadena.
         // Ejemplo: Si cadena = "Hello Java", antiguaSubcadena = "Java", y nuevaSubcadena = "world", el resultado debería ser "Hello world".
         return pepe;
