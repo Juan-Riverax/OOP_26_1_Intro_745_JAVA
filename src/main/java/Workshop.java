@@ -468,11 +468,44 @@ int indice=0;
         // - Tijera vence a Papel y Lagarto
         // - Lagarto vence a Spock y Papel
         // - Spock vence a Tijera y Piedra
-
-
+	int r=(int)(Math.random()*5+1);
+	String com="";
+	switch (r)
+	{
+		case 1: com ="Piedra";break;
+		case 2: com ="Papel";break;
+		case 3: com ="Tijera";break;
+		case 4: com ="Lagarto";break;
+		case 5: com ="Spock";break;
+	}
+	
+	if(eleccionUsuario.equals("Piedra")&&(com.equals("Tijera")||com.equals("Lagarto")))
+	{
+	return "Ganaste";
+	}
+	else if (eleccionUsuario.equals("Papel")&&(com.equals("Piedra")||com.equals("Spock")))
+	{
+	return "Ganaste";
+	}
+	else if (eleccionUsuario.equals("Tijera")&&(com.equals("Papel")||com.equals("Lagarto")))
+	{
+	return "Ganaste";
+	}
+	else if (eleccionUsuario.equals("Lagarto")&&(com.equals("Papel")||com.equals("Spock")))
+	{
+	return "Ganaste";
+	}
+	else if (eleccionUsuario.equals("Spock")&&(com.equals("Piedra")||com.equals("Tijera")))
+	{
+	return "Ganaste";
+	}
+	else if(eleccionUsuario.equals(com))
+	{
+	return "Empate";
+	}
+	return "Perdiste";
         // El método debe retornar un mensaje indicando el resultado del juego.
         // Ejemplo: Si la eleccionUsuario es "Piedra", el resultado podría ser "Ganaste" o "Perdiste" dependiendo de la elección de la computadora.
-        return "";
     }
 
     public String pptls2(String game[]) {
