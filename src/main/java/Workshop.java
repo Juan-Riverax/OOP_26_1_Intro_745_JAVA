@@ -368,9 +368,35 @@ int indice=0;
 
     // Método que convierte un número en su representación binaria
     public String convertirABinario(int numero) {
+	
+	if(numero>0)
+	{
+	String binario="";
+		while(numero>0)
+		{
+		int residuo = numero%2;
+		binario=residuo+binario;
+		numero=numero/2;
+		}
+	}
+
+	if(numero<0)
+	{
+	String binario="";
+	numero=Math.abs(numero);
+
+		while(numero>0)	
+		{
+		int residuo = numero%2;
+		binario=residuo+binario;
+		numero=numero/2;
+		}
+	binario="-"+binario;
+	return binario;
+	}
+	
         // TODO: Implementar el método para convertir un número en su representación binaria.
         // Ejemplo: Si numero = 10, el resultado debería ser "1010".
-        return "";
     }
 
     // Método que convierte un número en su representación hexadecimal
