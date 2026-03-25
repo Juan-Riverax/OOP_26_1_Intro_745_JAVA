@@ -248,9 +248,31 @@ int indice=0;
 
     // Método que rota un arreglo n posiciones
     public int[] rotarArreglo(int[] arreglo, int posiciones) {
-        // TODO: Implementar el método para rotar un arreglo n posiciones.
-        // Ejemplo: Si arreglo = [1, 2, 3, 4, 5] y posiciones = 2, el resultado debería ser [3, 4, 5, 1, 2].
-        return new int[0];
+        if(posiciones<0)
+	{
+	for(int i=0; i>posiciones;i--)
+		{
+			for(int j=0;j<arreglo.length-1;j++)
+			{
+				int k = arreglo[j];
+				arreglo[j]=arreglo[j+1];
+				arreglo[j+1]=k;
+			}
+		}
+	}
+	else
+	{
+	for(int i=0; i<posiciones;i++)
+	{
+	for(int j=arreglo.length-1;j>0;j--)
+	{
+		int k = arreglo[j];
+		arreglo[j]=arreglo[j-1];
+		arreglo[j-1]=k;
+	}
+
+}	}
+        return arreglo;
     }
 
     // Método que cuenta los caracteres en una cadena
@@ -326,23 +348,29 @@ int indice=0;
     // Método que reemplaza una subcadena en una cadena por otra subcadena
     public String reemplazarSubcadena(String cadena, String antiguaSubcadena, String nuevaSubcadena) {
         String pepe= cadena.replace(antiguaSubcadena,nuevaSubcadena);
-	// TODO: Implementar el método para reemplazar una subcadena en una cadena por otra subcadena.
-        // Ejemplo: Si cadena = "Hello Java", antiguaSubcadena = "Java", y nuevaSubcadena = "world", el resultado debería ser "Hello world".
         return pepe;
     }
 
     // Método que busca una subcadena en una cadena y retorna su índice
     public int buscarSubcadena(String cadena, String subcadena) {
-        // TODO: Implementar el método para buscar una subcadena en una cadena y retornar su índice.
-        // Ejemplo: Si cadena = "Hello world" y subcadena = "world", el resultado debería ser 6.
-        return -1;
+        return cadena.indexOf(subcadena);
     }
 
     // Método que valida un correo electrónico
     public boolean validarCorreoElectronico(String correo) {
-        // TODO: Implementar el método para validar un correo electrónico.
-        // Ejemplo: Si correo = "test@example.com", el resultado debería ser true.
-        return false;
+       if(!correo.contains("@"))
+	{
+		return false;
+	}
+	else if (!correo.matches("[a-zA-Z0-9@.-]+")) 
+	{
+		return false;
+	}
+	else if(correo.contains(" "))
+	{
+		return false;
+	}
+		return true;
     }
 
     // Método que calcula el promedio de una lista de números
@@ -505,30 +533,37 @@ int indice=0;
 	return "Empate";
 	}
 	return "Perdiste";
-        // El método debe retornar un mensaje indicando el resultado del juego.
-        // Ejemplo: Si la eleccionUsuario es "Piedra", el resultado podría ser "Ganaste" o "Perdiste" dependiendo de la elección de la computadora.
     }
 
     public String pptls2(String game[]) {
-        //Retornar player ganador o empate
-            /*
-            Rock = R
-            Paper = P
-            Scissors = S
-            Lizard = L
-            Spock = V
-        Scissors cuts Paper
-Paper covers Rock
-Rock crushes Lizard
-Lizard poisons Spock
-Spock smashes Scissors
-Scissors decapitates Lizard
-Lizard eats Paper
-Paper disproves Spock
-Spock vaporizes Rock
-Rock crushes Scissors
-         */
-        return "";
+        if(game[0]=="R" && (game[1]=="S"||game[1]=="L"))
+	{
+		return"Player 1";
+	}
+	else if(game[0]=="P" && (game[1]=="R"||game[1]=="V"))
+	{
+		return"Player 1";
+	}
+	else if(game[0]=="S" && (game[1]=="P"||game[1]=="L"))
+	{
+		return"Player 1";
+	}
+	else if(game[0]=="L" && (game[1]=="P"||game[1]=="V"))
+	{
+		return"Player 1";
+	}
+	else if(game[0]=="V" && (game[1]=="S"||game[1]=="R"))
+	{
+		return"Player 1";
+	}
+	else if(game[0].equals(game[1]))
+	{
+		return "Empate";
+	}
+	else
+	{
+		return "Player 2";
+	}
     }
 
     public double areaCirculo(double radio) {
