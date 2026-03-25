@@ -401,13 +401,104 @@ int indice=0;
     }
     // Método que convierte un número en su representación hexadecimal
     public String convertirAHexadecimal(int numero) {
-        // TODO: Implementar el método para convertir un número en su representación hexadecimal.
-        // Ejemplo: Si numero = 255, el resultado debería ser "FF".
-        return "";
-    }
 
+	if(numero>0)
+	{
+	String hex="";
+		while(numero>0)
+		{
+		int residuo = numero%16;
+			if(residuo==10)
+			{
+			String residuos="A";
+			hex=residuos+hex;
+			}
+			else if(residuo==11)
+			{
+			String residuos="B";
+			hex=residuos+hex;
+			}
+			else if(residuo==12)
+			{
+			String residuos="C";
+			hex=residuos+hex;
+			}
+			else if(residuo==13)
+			{
+			String residuos="D";
+			hex=residuos+hex;
+			}
+			else if(residuo==14)
+			{
+			String residuos="E";
+			hex=residuos+hex;
+			}
+			else if(residuo==15)
+			{
+			String residuos="F";
+			hex=residuos+hex;
+			}
+			else
+			{
+			hex=residuo+hex;
+			numero=numero/16;
+			}
+			
+	return hex;
+	}
+
+	if(numero<0)
+	{
+	String binario="";
+	numero=Math.abs(numero);
+
+		while(numero>0)	
+		{
+		int residuo = numero%16;
+		if(residuo==10)
+			{
+			String residuos="A";
+			hex=residuos+hex;
+			}
+			else if(residuo==11)
+			{
+			String residuos="B";
+			hex=residuos+hex;
+			}
+			else if(residuo==12)
+			{
+			String residuos="C";
+			hex=residuos+hex;
+			}
+			else if(residuo==13)
+			{
+			String residuos="D";
+			hex=residuos+hex;
+			}
+			else if(residuo==14)
+			{
+			String residuos="E";
+			hex=residuos+hex;
+			}
+			else if(residuo==15)
+			{
+			String residuos="F";
+			hex=residuos+hex;
+			}
+			else
+			{
+			hex=residuo+hex;
+			numero=numero/16;
+			}
+	hex="-"+hex;
+	return hex;
+	}
+    }
+}
+	return "0";
+}
     // Método para el juego de piedra, papel, tijera, lagarto, Spock
-    public String jugarPiedraPapelTijeraLagartoSpock(String eleccionUsuario) {
+	public String jugarPiedraPapelTijeraLagartoSpock(String eleccionUsuario) {
         // TODO: Implementar el método para el juego de Piedra, Papel, Tijera, Lagarto, Spock.
         // Las reglas del juego son:
         // - Piedra vence a Tijera y Lagarto
