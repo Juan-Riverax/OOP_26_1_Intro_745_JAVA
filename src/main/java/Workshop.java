@@ -297,9 +297,18 @@ int indice=0;
 
     // Método que cuenta el número de palabras en una cadena
     public int contarPalabras(String cadena) {
-        String[] palabras = cadena.trim().split("\\s+");
-	int npalabras = palabras.length;
+	int npalabras;
+        if(cadena == null || cadena.trim().isEmpty())
+	{
+		npalabras=0;
+		return npalabras;
+	}
+	else 
+	{
+	String[] palabras = cadena.trim().split("\\s+");
+	 npalabras = palabras.length;
         return npalabras;
+	}
     }
 
     // Método que convierte una cadena a mayúsculas
