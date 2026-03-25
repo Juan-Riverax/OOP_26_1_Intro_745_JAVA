@@ -451,9 +451,9 @@ int indice=0;
 			{
 			hex=residuo+hex;
 			}
+		hex="-"+hex;
 		numero=numero/16;
 		}
-		hex="-"+hex;
 		return hex;
 	}
 	return "0";
