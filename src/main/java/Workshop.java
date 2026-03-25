@@ -297,9 +297,8 @@ int indice=0;
 
     // Método que cuenta el número de palabras en una cadena
     public int contarPalabras(String cadena) {
-        // TODO: Implementar el método para contar el número de palabras en una cadena.
-        // Ejemplo: Si cadena = "Este es un test", el resultado debería ser 4.
-        return 0;
+        int npalabras=cadena.trim().split("\\s+").length;
+        return npalabras;
     }
 
     // Método que convierte una cadena a mayúsculas
