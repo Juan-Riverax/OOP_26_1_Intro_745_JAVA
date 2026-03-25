@@ -408,40 +408,21 @@ int indice=0;
 		while(numero>0)
 		{
 		int residuo = numero%16;
-			if(residuo==10)
+			if(residuo>=10)
 			{
-			String residuos="A";
-			hex=residuos+hex;
-			}
-			else if(residuo==11)
-			{
-			String residuos="B";
-			hex=residuos+hex;
-			}
-			else if(residuo==12)
-			{
-			String residuos="C";
-			hex=residuos+hex;
-			}
-			else if(residuo==13)
-			{
-			String residuos="D";
-			hex=residuos+hex;
-			}
-			else if(residuo==14)
-			{
-			String residuos="E";
-			hex=residuos+hex;
-			}
-			else if(residuo==15)
-			{
-			String residuos="F";
-			hex=residuos+hex;
+			switch(residuo)
+				{
+				case 10: hex="A"+hex; break;
+				case 11: hex="B"+hex; break;
+				case 12: hex="C"+hex; break;
+				case 13: hex="D"+hex; break;
+				case 14: hex="E"+hex; break;
+				case 15: hex="F"+hex; break;
+				}
 			}
 			else
 			{
 			hex=residuo+hex;
-			numero=numero/16;
 			}
 		}
 	return hex;
@@ -450,49 +431,28 @@ int indice=0;
 	if(numero<0)
 	{
 	String hex="";
-	numero=Math.abs(numero);
-
-		while(numero>0)	
+		while(numero>0)
 		{
 		int residuo = numero%16;
-		if(residuo==10)
+			if(residuo>=10)
 			{
-			String residuos="A";
-			hex=residuos+hex;
-			}
-			else if(residuo==11)
-			{
-			String residuos="B";
-			hex=residuos+hex;
-			}
-			else if(residuo==12)
-			{
-			String residuos="C";
-			hex=residuos+hex;
-			}
-			else if(residuo==13)
-			{
-			String residuos="D";
-			hex=residuos+hex;
-			}
-			else if(residuo==14)
-			{
-			String residuos="E";
-			hex=residuos+hex;
-			}
-			else if(residuo==15)
-			{
-			String residuos="F";
-			hex=residuos+hex;
+			switch(residuo)
+				{
+				case 10: hex="A"+hex; break;
+				case 11: hex="B"+hex; break;
+				case 12: hex="C"+hex; break;
+				case 13: hex="D"+hex; break;
+				case 14: hex="E"+hex; break;
+				case 15: hex="F"+hex; break;
+				}
 			}
 			else
 			{
 			hex=residuo+hex;
-			numero=numero/16;
 			}
-		hex="-"+hex;
 		}
-	return hex;
+		hex="-"+hex;
+		return hex;
 	}
 	return "0";
 }
