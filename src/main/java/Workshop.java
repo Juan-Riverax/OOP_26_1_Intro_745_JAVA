@@ -279,6 +279,7 @@ int indice=0;
 
     // Método que verifica si una cadena es un palíndromo
     public boolean esPalindromo(String cadena) {
+	cadena=cadena.toLowerCase();
         char[] arregloInvertido = new char[cadena.length()];
 		
 		for (int i=0; i<cadena.length(); i++)
