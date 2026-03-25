@@ -432,6 +432,7 @@ int indice=0;
 	if(numero<0)
 	{
 	String hex="";
+	numero=Math.abs(numero);
 		while(numero>0)
 		{
 		int residuo = numero%16;
