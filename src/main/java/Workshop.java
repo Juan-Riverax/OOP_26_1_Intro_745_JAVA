@@ -424,6 +424,7 @@ int indice=0;
 			{
 			hex=residuo+hex;
 			}
+		numero=numero/16;
 		}
 	return hex;
 	}
@@ -450,6 +451,7 @@ int indice=0;
 			{
 			hex=residuo+hex;
 			}
+		numero=numero/16;
 		}
 		hex="-"+hex;
 		return hex;
